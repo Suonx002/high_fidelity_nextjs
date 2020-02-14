@@ -45,8 +45,6 @@ export default class MyApp extends App {
           />
         </Head>
         <ThemeProvider theme={Theme}>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <CssBaseline />
           <Header
             value={this.state.value}
             setValue={this.setValue}

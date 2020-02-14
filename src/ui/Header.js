@@ -19,6 +19,7 @@ import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import Hidden from '@material-ui/core/Hidden';
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -201,7 +202,9 @@ const Header = props => {
           }
           break;
         case '/estimate':
-          setValue(5);
+          if (value !== 5) {
+            setValue(5);
+          }
           break;
         default:
           break;
@@ -343,7 +346,8 @@ const Header = props => {
                 className={classes.logo}
               />
             </Button>
-            {matches ? drawer : tabs}
+            <Hidden mdDown>{tabs}</Hidden>
+            <Hidden lgUp>{drawer}</Hidden>
           </Toolbar>
         </AppBar>
       </ElevationScroll>
