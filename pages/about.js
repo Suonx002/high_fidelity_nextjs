@@ -1,4 +1,6 @@
 import React from 'react';
+import Head from 'next/head';
+
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -6,7 +8,7 @@ import Avatar from '@material-ui/core/Avatar';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Hidden from '@material-ui/core/Hidden';
 
-import CallToAction from '..src/ui/CallToAction';
+import CallToAction from '../src/ui/CallToAction';
 
 const useStyles = makeStyles(theme => ({
   missionStatement: {
@@ -33,6 +35,21 @@ const About = props => {
 
   return (
     <Grid container direction='column'>
+      <Head>
+        <title key='title'>About Us - History & Team | Arc Development</title>
+        <meta
+          name='description'
+          key='description'
+          content='We provide the fastest, most modern, affordable, and aesthetic software design and development services in the Midwest. Get a free online estimate now!'
+        />
+        <meta
+          property='og:title'
+          content='Bringing West Coast Technology to the Midwest | About Us'
+          key='og:title'
+        />
+        <meta property='og:url' key='og:url' content='arc.com/about' />
+        <link rel='canonical' key='canonical' href='arc.com/about' />
+      </Head>
       <Grid
         item
         className={classes.rowContainer}

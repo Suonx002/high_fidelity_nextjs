@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Lottie from 'react-lottie';
 import Link from '../src/Link';
 
@@ -80,6 +81,23 @@ const CustomSoftware = props => {
 
   return (
     <Grid container direction='column'>
+      <Head>
+        <title key='title'>
+          Custom Software Development and Design - Free Estimate
+        </title>
+        <meta
+          name='description'
+          key='description'
+          content='Cutting-edge custom software development with gorgeous designs from scratch - let us optimize your business, solving problems instead of creating new ones.'
+        />
+        <meta
+          property='og:title'
+          content='Bringing West Coast Technology to the Midwest | Custom Software Development'
+          key='og:title'
+        />
+        <meta property='og:url' key='og:url' content='arc.com/customsoftware' />
+        <link rel='canonical' key='canonical' href='arc.com/customsoftware' />
+      </Head>
       {/* Custom Software Heading */}
       <Grid
         item

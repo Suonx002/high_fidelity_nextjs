@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
+
 import axios from 'axios';
 import Lottie from 'react-lottie';
 import { cloneDeep } from 'lodash';
@@ -749,6 +751,23 @@ export default function Estimate() {
 
   return (
     <Grid container direction='row'>
+      <Head>
+        <title key='title'>
+          Free Custom Software Estimate | Arc Development
+        </title>
+        <meta
+          name='description'
+          key='description'
+          content='Use our free online estimate calculator to instantly check the cost of your custom software, mobile app, or website design and development project!'
+        />
+        <meta
+          property='og:title'
+          content='Bringing West Coast Technology to the Midwest | Free Estimate'
+          key='og:title'
+        />
+        <meta property='og:url' key='og:url' content='arc.com/estimate' />
+        <link rel='canonical' key='canonical' href='arc.com/estimate' />
+      </Head>
       <Grid
         item
         container
