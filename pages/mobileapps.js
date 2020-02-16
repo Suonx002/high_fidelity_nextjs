@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Lottie from 'react-lottie';
 import Link from '../src/Link';
-import Head from 'next/head';
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
